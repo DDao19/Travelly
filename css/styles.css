@@ -57,6 +57,9 @@ button:hover {
   color: white;
   border-top: 2px solid beige;
   border-bottom: 2px solid beige;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
 }
 
 nav {
@@ -82,7 +85,7 @@ nav ul {
 
 /* HERO SECTION */
 .hero {
-  background: linear-gradient(rgba(71, 71, 71, 0.4), transparent),url('../img/landing-page.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), transparent),url('../img/landing-page.jpg');
   min-height: 90vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -99,7 +102,7 @@ nav ul {
   padding: 3rem;
 }
 
-/* BENEFITS SECTION */
+/* LOCATIONS SECTION */
 #locations {
   min-height: 100vh;
   background: linear-gradient(rgb(0, 0, 0, 0.5), transparent), url(../img/new-york-page.png);
@@ -123,7 +126,7 @@ nav ul {
 
 .locations-head h3 {
   padding: 2rem;
-  color: rgb(117, 35, 35);
+  color: rgb(82, 32, 32);
 }
 
 .cloud {
@@ -156,7 +159,7 @@ nav ul {
 
 /* The Benefits Section */
 .benefits-head {
-  background: rgb(94, 92, 92);
+  background: rgb(124, 122, 122);
   padding: 3rem;
   min-height: 30vh;
   display: flex;
@@ -195,6 +198,7 @@ nav ul {
 .card h4,
 .card p {
   padding: 1rem;
+  line-height: 1.8;
 }
 
 .card-icon{
@@ -268,7 +272,10 @@ footer ul {
   justify-content: space-between;
   align-items: center;
 }
-
+button:focus {
+  background: #223246;
+  outline-style: solid;
+}
 
 /* MEDIA QUERY */
 @media screen and (max-width: 930px) {
